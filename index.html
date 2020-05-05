@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/styles.css">
+</head>
+<body>
+    
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+          <div class="sidebar-heading">
+            <div class="input-group mb-3">
+                <input type="text" id="cityState" class="form-control" placeholder="Search by City" aria-label="Search by City" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button" id="searchCity">Search</button>
+                </div>
+              </div>
+          </div>
+          <div id="pastSearches" class="list-group list-group-flush">
+          </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+    
+        <div class="jumbotron jumbotron-fluid bg-dark text-white text-center p-3">
+            <div class="container">
+                <h1 class="display-4 text-capitalize" id="dashboardTitle">Weather Dashboard</h1>
+            </div>
+            </div>
+
+
+
+
+            <!-- Current Day Forcast -->
+            <div class="card mb-3" id='day0'>
+              <div class="row no-gutters">
+                <div class="col-md-2">
+                  <img src="" id="img0" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title" id="date0">Date: Day 0</h5>
+                    <p class="card-text" id="description0" >Description 0</p>
+                    <p class="card-text" id="temp0" >Temp 0</p>
+                    <p class="card-text" id="humid0" >Humidity 0</p>
+                    <p class="card-text" id="uv0" >UV 0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+
+            <!-- 5 Day forcast -->
+              <!-- 
+                Uses id of
+                datex
+                tempx
+                humidx
+               -->
+            <!-- day1 -->
+            <div class="d-flex flex-row bd-highlight mb-3">
+
+              <div class="p-2 bd-highlight flex-fill" id='day1'>
+                <div class="card" >
+                  <img src="" id="img1" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" id="date1">Date: Day 1</h5>
+                    <p class="card-text" id="description1" >Description 1</p>
+                    <p class="card-text" id="temp1" >Temp 1</p>
+                    <p class="card-text" id="humid1" >Humidity 1</p>
+                    <p class="card-text" id="uv1" >UV 1</p>
+                  </div>
+                </div>
+            </div>
+              
+              <!-- day2 -->
+              
+                <div class="p-2 bd-highlight flex-fill" id='day2'>
+                  <div class="card" >
+                    <img src="" id="img2" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" id="date2">Date: Day 2</h5>
+                      <p class="card-text" id="description2" >Description 2</p>
+                      <p class="card-text" id="temp2" >Temp 2</p>
+                      <p class="card-text" id="humid2" >Humidity 2</p>
+                      <p class="card-text" id="uv2" >UV 2</p>
+                      </div>
+                  </div>
+                </div>
+             
+              
+              <!-- day3 -->
+              
+                <div class="p-2 bd-highlight flex-fill" id='day3'>
+                  <div class="card" >
+                    <img src="" id="img3" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" id="date3">Date: Day 3</h5>
+                      <p class="card-text" id="description3" >Description 3</p>
+                      <p class="card-text" id="temp3" >Temp 3</p>
+                      <p class="card-text" id="humid3" >Humidity 3</p>
+                      <p class="card-text" id="uv3" >UV 3</p>
+                      </div>
+                  </div>
+                </div>
+            
+              <!-- day4 -->
+              
+                <div class="p-2 bd-highlight flex-fill" id='day4'>
+                  <div class="card" >
+                    <img src="" id="img4" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" id="date4">Date: Day 4</h5>
+                      <p class="card-text" id="description4" >Description 0</p>
+                      <p class="card-text" id="temp4" >Temp 4</p>
+                      <p class="card-text" id="humid4" >Humidity 4</p>
+                      <p class="card-text" id="uv4" >UV 4</p>
+                      </div>
+                  </div>
+                </div>
+              <!-- day5 -->
+              
+                <div class="p-2 bd-highlight flex-fill" id='day5'>
+                  <div class="card" >
+                    <img src="" id="img5" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" id="date5">Date: Day 5</h5>
+                      <p class="card-text" id="description5" >Description 0</p>
+                      <p class="card-text" id="temp5" >Temp 5</p>
+                      <p class="card-text" id="humid5" >Humidity 5</p>
+                      <p class="card-text" id="uv5" >UV 5</p>
+                      </div>
+                  </div>
+                </div>
+            
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./Assets/scripts.js"></script>
+</body>
+</html>
+
+
+
+<!-- 8===D~~~ -->
+
